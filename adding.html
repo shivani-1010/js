@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<ul id="menu">
+    <li>Home</li>
+    <li>Contact us</li>
+    <li>About us</li>
+</ul>
+
+<button onclick="replace()">Replace</button>
+
+    <script>
+function replace(){
+const element =document.getElementById("menu").children[0]
+
+const newnode=document.createTextNode("support")
+element.replaceChild(newnode, element.childNodes[0])
+}
+
+
+
+
+
+// function removeelement(){
+
+// const list= document.getElementById("menu")
+// list.removeChild(list.lastElementChild)
+// if(list.hasChildNodes){
+// list.removeChild(list.children[0])
+
+//    } 
+
+// }
+
+
+// const menu=document.querySelector("#menu")
+// let li= document.createElement("li");
+// li.textContent="ABOUT US"
+
+// menu.appendChild(li)
+
+    </script> 
+</body>
+</html>
